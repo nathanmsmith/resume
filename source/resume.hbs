@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>
+      {{name}} - Resume
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  </head>
+  <body>
+    <header>
+      <h1>
+        {{header.name}}
+      </h1>
+      <ul>
+        <li>
+          <a href="{{header.website}}">
+            {{header.website}}
+          </a>
+        </li>
+        <li>
+          <a href="mailto:{{header.email}}">
+            {{header.email}}
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/{{header.github}}">
+            {{header.github}}
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/{{header.linkedin}}">
+            {{header.linkedin}}
+          </a>
+        </li>
+      </ul>
+    </header>
+    <section class='sidebar'>
+      <h2>
+        Education
+      </h2>
+
+      <h3>
+        Relevant Coursework
+      </h3>
+      <ul>
+        {{#each education.coursework}}
+          <li>
+            {{this}}
+          </li>
+        {{/each}}
+      </ul>
+    </section>
+    <section class='main'>
+      <h2>
+        Experience
+      </h2>
+      <h2>
+        Selected Projects
+      </h2>
+    </section>
+  </body>
+</html>

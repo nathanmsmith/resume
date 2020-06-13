@@ -1,0 +1,40 @@
+header:
+  name: Nathan Smith
+  website: https://nathansmith.io
+  email: nathan.smith@ucla.edu
+  github: nathunsmitty
+  linkedin: nathanmatthewsmith
+
+education:
+  school: University of California, Los Angeles
+  major: Computer Science
+  major_type: B.S.
+  minor: Digital Humanities
+  honors:
+    - Upsilon Pi Epsilon Member
+  coursework:
+    - Algorithms
+    - Operating Systems
+    - Computer Networking
+    - Computer Graphics
+    - Programming Languages
+    - Compilers
+    - Machine Learning
+    - Artificial Intelligence
+    - Experience Design
+    - Human-Computer Interaction
+    - Quantum Computing
+    - Database Systems
+    - Software Development Tools
+
+skills:
+  languages:
+    - LaTeX
+
+  frameworks_and_tools:
+
+experience:
+  - Facebook
+
+projects:
+  - Exploring Enrollment

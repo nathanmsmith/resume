@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "eleventy --input=source --output=build/",
+    "start": "eleventy --input=source --output=build/ --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "0.11.0",
+    "js-yaml": "3.14.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
+}
