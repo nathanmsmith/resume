@@ -1,0 +1,108 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  margin: 20px;
+
+  width: 800px;
+  margin: auto;
+  font-size: 11pt;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+h1 {
+  font-family: Garamond, serif;
+  font-size: 42pt;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 13pt;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+header {
+  ul {
+    list-style: none;
+    font-family: Georga;
+    font-size: 10pt;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    li {
+      a {
+        font-style: italic;
+      }
+    }
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    background-color: black;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+}
+
+#skills {
+  ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12pt;
+  }
+  li {
+    display: inline;
+    &:after {
+      content: "•";
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+#experience {
+  h3 {
+    display: inline;
+  }
+
+  .job {
+    margin-bottom: 12pt;
+  }
+
+  .job-header {
+    font-size: 12pt;
+  }
+
+  .job-dates {
+    font-style: italic;
+  }
+}

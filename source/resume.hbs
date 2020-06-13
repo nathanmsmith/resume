@@ -6,12 +6,9 @@
       {{name}} - Resume
     </title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link
-      rel='stylesheet'
-      href='https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
-      integrity='sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq'
-      crossorigin='anonymous'
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/resume.css">
   </head>
   <body>
     <header>
@@ -40,6 +37,7 @@
           </a>
         </li>
       </ul>
+      <hr>
     </header>
     <main>
       <section id='col-1'>
@@ -51,7 +49,7 @@
             {{education.school}}
           </h3>
           <p>
-            {{education.major_type}} {{education.major}}
+          {{education.major_type}} {{education.major}}
           </p>
 
           <h3>
@@ -97,16 +95,16 @@
             Experience
           </h2>
           {{#each experience}}
-            <div>
-              <a href="{{this.url}}">
-                {{this.company}}
-              </a>
-              <span class='job-title'>
-                {{this.title}}
-              </span>
-              <span class='job-dates'>
-                ({{this.dates}})
-              </span>
+            <div class="job">
+              <div class="job-header">
+                <h3><a href="{{this.url}}">{{this.company}}</a></h3>:
+                <span class='job-title'>
+                  {{this.title}}
+                </span>
+                <span class='job-dates'>
+                  ({{this.dates}})
+                </span>
+              </div>
               <ul>
                 {{#each this.bullets}}
                   <li>
