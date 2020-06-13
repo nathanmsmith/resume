@@ -62,35 +62,56 @@ experience:
   - company: Facebook
     url: https://facebook.com
     title: Production Engineering Intern
-    dates: September 2020 – December 2020
+    start_date: September 2020
+    end_date: December 2020
     bullets:
       - Incoming fall intern.
 
   - company: Stripe
     url: https://stripe.com
     title: Software Engineering Intern
-    dates: June 2020 – September 2020
+    start_date: June 2020
+    end_date: September 2020
     bullets:
       - Incoming summer intern on Stripe Terminal server team.
 
+  - company: Keybase
+    url: https://keybase.io
+    title: Software Engineering Intern
+    start_date: June 2019
+    end_date: September 2019
+    bullets:
+      - Implemented and extended RPCs enhancing path payments over the Stellar cryptocurrency network in Go.
+      - Spearheaded development of a Keybase TypeScript bot library for use by third-party developers.
+      - Proposed and implemented a program to compile types defined in Avro serialization language into Python, Go, and TypeScript for use by Keybase bot libraries.
 
-# Keybase: Software Engineering Intern (June 2019 – September 2019)
-# Implemented and extended RPCs enhancing path payments over the Stellar cryptocurrency network in Go.
-# Spearheaded development of a Keybase TypeScript bot library for use by third-party developers.
-# Proposed and implemented a program to compile types defined in Avro serialization language into Python, Go, and TypeScript for use by Keybase bot libraries.
+  - company: Datadog
+    url: https://www.datadoghq.com
+    title: Software Engineering Intern
+    start_date: January 2019
+    end_date: May 2019
+    bullets:
+      - Individually completed a team OKR by overhauling frontend number formatting by ensuring output is human-readable and increasing test coverage from ~15% to 100%.
+      - Restructured Datadog’s frontend storage of supported units, removing thousands of lines of code, improving frontend type safety, and reducing the size of subsequent page loads by 2.6kB through caching.
+      - Planned and led discussion of 8 engineers on working with side effects in Redux.
 
-# Datadog: Software Engineering Intern (January 2019 – May 2019)
-# Individually completed a team OKR by overhauling frontend number formatting by ensuring output is human-readable and increasing test coverage from ~15% to 100%.
-# Restructured Datadog’s frontend storage of supported units, removing thousands of lines of code, improving frontend type safety, and reducing the size of subsequent page loads by 2.6kB through caching.
-# Planned and led discussion of 8 engineers on working with side effects in Redux.
+  - company: Keybase
+    url: https://keybase.io
+    title: Software Engineering Intern
+    start_date: June 2018
+    end_date: September 2018
+    bullets:
+      - Developed frontends enabling cryptocurrency payments and wallet account management from within the Keybase Electron/React Native app.
+      - Integrated server data into frontend client asynchronously through sagas to provide mowre accurate information on unread chat messages.
 
-# Keybase: Software Engineering Intern (June 2018 – September 2018)
-# Developed frontends enabling cryptocurrency payments and wallet account management from within the Keybase Electron/React Native app.
-# Integrated server data into frontend client asynchronously through sagas to provide mowre accurate information on unread chat messages.
-
-# Autodesk: Web Development Intern (June 2017 – September 2017)
-# Audited information architecture of internal sites focusing on usability, designed clearer mockups and prototypes, and presented findings to Autodesk’s VP of Design.
-# Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
+  - company: Autodesk
+    url: https://www.autodesk.com
+    title: Web Development Intern
+    start_date: June 2017
+    end_date: September 2017
+    bullets:
+      - Audited information architecture of internal sites focusing on usability, designed clearer mockups and prototypes, and presented findings to Autodesk’s VP of Design.
+      - Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
 
 projects:
   - Exploring Enrollment
