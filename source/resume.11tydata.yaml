@@ -114,4 +114,12 @@ experience:
       - Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
 
 projects:
-  - Exploring Enrollment
+  - name: Exploring Enrollment
+    url: https://nathansmith.io/exploring-enrollment
+    technologies: [Go, React, PostgreSQL, AWS Lambda]
+    description: Sole developer of highly concurrent Go web scraper that ran hourly as a Lambda function to collect real-time enrollment data from UCLA Registrar. Wrote two-part blog post on development process in addition to a four-part report on findings.
+
+  - name: Sources
+    url: https://github.com/dailybruin/sources
+    technologies: [TypeScript, React, GraphQL, Express.js, PostgreSQL]
+    description: Sole developer of secure and real-time database application designed to quickly search manage 800+ news contacts for school newspaper. Site backend is an Express.js server that handles OAuth login and CRUD functionality. React frontend communicates with server via GraphQL.
