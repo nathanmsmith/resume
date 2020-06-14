@@ -12,6 +12,12 @@ module.exports = (eleventyConfig) => {
     return value.trim()
   })
 
+  eleventyConfig.addPairedHandlebarsShortcode('currentDate', () => {
+    const today = new Date()
+    const options = { year: 'numeric', month: 'long', day: 'numeric' }
+    return today.toLocaleString('en-US', options)
+  })
+
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.safeLoad(contents))
   // eleventyConfig.dir = { data: '.' }
   // return eleventyConfig
