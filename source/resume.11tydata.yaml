@@ -7,11 +7,13 @@ header:
 
 education:
   school: University of California, Los Angeles
+  graduation: 'Graduation date: June 2021'
   major: Computer Science
   major_type: B.S.
   minor: Digital Humanities
+  gpa: 3.52
   honors:
-    - Upsilon Pi Epsilon Member
+    - Member, Upsilon Pi Epsilon Honor Society
   coursework:
     - Algorithms
     - Operating Systems

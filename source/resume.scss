@@ -2,10 +2,17 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   margin: 20px;
 
-  width: 800px;
+  width: 7.84in;
   margin: auto;
   font-size: 11pt;
 }
+
+.container {
+  margin: 0.2in 0;
+}
+
+// @media print {
+// }
 
 a {
   color: inherit;
@@ -72,9 +79,12 @@ header {
   }
 
   hr {
+    display: block;
     height: 1px;
-    border: 0;
-    background-color: black;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-top: solid 1px #aaa;
   }
 }
 
@@ -128,4 +138,14 @@ main {
 #col-1 {
   font-size: 12pt;
   display: grid;
+}
+
+#education {
+  .school {
+    margin-bottom: 12pt;
+  }
+
+  .graduation-date {
+    font-style: italic;
+  }
 }
