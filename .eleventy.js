@@ -18,6 +18,11 @@ module.exports = (eleventyConfig) => {
     return today.toLocaleString('en-US', options)
   })
 
+  eleventyConfig.addFilter('arrayToText', (array) => {
+    const text = array.join(', ')
+    return text
+  })
+
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.safeLoad(contents))
   // eleventyConfig.dir = { data: '.' }
   // return eleventyConfig

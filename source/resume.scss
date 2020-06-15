@@ -1,14 +1,20 @@
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   margin: 20px;
 
   width: 7.84in;
   margin: auto;
   font-size: 11pt;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
 }
 
 .container {
   margin: 0.2in 0;
+}
+
+section {
+  margin-bottom: 12pt;
 }
 
 // @media print {
@@ -21,7 +27,8 @@ a {
 
 ul {
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 11px;
+  list-style-type: '• ';
 }
 
 h1 {
@@ -29,6 +36,7 @@ h1 {
   font-size: 42pt;
   text-align: center;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -51,7 +59,7 @@ p {
 header {
   ul {
     list-style: none;
-    font-family: Georga;
+    font-family: Georgia;
     font-size: 10pt;
 
     padding: 0;
@@ -70,10 +78,10 @@ header {
         font-style: italic;
       }
       &:after {
-        content: "│";
+        content: '│';
       }
       &:last-child:after {
-        content: "";
+        content: '';
       }
     }
   }
@@ -90,7 +98,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2.1in 5.6in;
   column-gap: 10px;
 }
 
@@ -103,10 +111,10 @@ main {
   li {
     display: inline;
     &:after {
-      content: "•";
+      content: '•';
     }
     &:last-child:after {
-      content: "";
+      content: '';
     }
   }
 }

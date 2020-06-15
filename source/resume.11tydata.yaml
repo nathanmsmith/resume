@@ -118,7 +118,7 @@ experience:
 projects:
   - name: Exploring Enrollment
     url: https://nathansmith.io/exploring-enrollment
-    technologies: [Go, React, PostgreSQL, AWS Lambda]
+    technologies: [Go, React, PostgreSQL, 'AWS Lambda']
     description: Sole developer of highly concurrent Go web scraper that ran hourly as a Lambda function to collect real-time enrollment data from UCLA Registrar. Wrote two-part blog post on development process in addition to a four-part report on findings.
 
   - name: Sources
