@@ -27,9 +27,15 @@ education:
     - Human-Computer Interaction
     - Quantum Computing
     - Database Systems
-    - Software Development Tools
-  # extracurriculars:
-  #   -
+    - title: Software Development Tools
+      TA: true
+  extracurriculars:
+    - organization: UCLA Radio
+      role:
+      dates:
+    - organization: Daily Bruin
+      role:
+    # - Upsilon Pi Epsilon
 
 skills:
   languages:

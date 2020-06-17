@@ -12,6 +12,16 @@ module.exports = (eleventyConfig) => {
     return value.trim()
   })
 
+  eleventyConfig.addFilter('formatCourse', (course) => {
+    if (typeof course === 'string') return course
+
+    let output = course.title
+    if (course.TA) {
+      output += '<div class="course-info">(Undergraduate TA)</div>'
+    }
+    return output
+  })
+
   eleventyConfig.addPairedHandlebarsShortcode('currentDate', () => {
     const today = new Date()
     const options = { year: 'numeric', month: 'long', day: 'numeric' }

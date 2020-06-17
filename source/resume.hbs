@@ -37,7 +37,7 @@
             </a>
           </li>
           <li>
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin-in"></i>
             <a href="https://linkedin.com/in/{{header.linkedin}}">
               {{header.linkedin}}
             </a>
@@ -73,7 +73,7 @@
             <ul>
               {{#each education.coursework}}
                 <li>
-                  {{this}}
+                  {{{formatCourse this}}}
                 </li>
               {{/each}}
             </ul>

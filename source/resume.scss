@@ -6,7 +6,7 @@ body {
   margin: auto;
   font-size: 11pt;
   line-height: 1.1;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
 }
 
 .container {
@@ -44,12 +44,14 @@ h2 {
   font-size: 13pt;
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 h3 {
   font-size: 12pt;
   font-weight: bold;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 p {
@@ -98,7 +100,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 2.1in 5.6in;
+  grid-template-columns: 2.16in 5.6in;
   column-gap: 10px;
 }
 
@@ -140,12 +142,21 @@ main {
 #projects {
   h3 {
     display: inline;
+
+    a {
+      color: #1779ba;
+      text-decoration: underline;
+    }
+  }
+
+  .project-tech {
+    font-size: 12pt;
   }
 }
 
 #col-1 {
   font-size: 12pt;
-  display: grid;
+  // display: grid;
 }
 
 #education {
@@ -156,4 +167,14 @@ main {
   .graduation-date {
     font-style: italic;
   }
+
+  .course-info {
+    font-size: 10pt;
+    color: #535353;
+    font-style: italic;
+  }
+}
+
+#last-updated {
+  color: #a7a7a7;
 }
