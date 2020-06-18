@@ -1,24 +1,20 @@
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   margin: 20px;
 
   width: 7.84in;
   margin: auto;
   font-size: 11pt;
-  line-height: 1.1;
+  // line-height: 1.2;
   letter-spacing: 0.25px;
 }
 
 .container {
-  margin: 0.2in 0;
+  padding: 0.2in 0;
+  height: 10in;
+  display: flex;
+  flex-direction: column;
 }
-
-section {
-  margin-bottom: 12pt;
-}
-
-// @media print {
-// }
 
 a {
   color: inherit;
@@ -28,8 +24,13 @@ a {
 ul {
   margin: 0;
   padding-left: 11px;
-  list-style-type: '• ';
+  list-style-type: "• ";
 }
+
+// li {
+//   margin-top: 1pt;
+//   margin-bottom: 1pt;
+// }
 
 h1 {
   font-family: Garamond, serif;
@@ -50,6 +51,13 @@ h2 {
 h3 {
   font-size: 12pt;
   font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 12pt;
+  font-weight: 600;
   margin: 0;
   letter-spacing: 0.5px;
 }
@@ -80,10 +88,10 @@ header {
         font-style: italic;
       }
       &:after {
-        content: '│';
+        content: "│";
       }
       &:last-child:after {
-        content: '';
+        content: "";
       }
     }
   }
@@ -100,8 +108,9 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 2.16in 5.6in;
+  grid-template-columns: 2.36in 5.6in;
   column-gap: 10px;
+  flex: 1;
 }
 
 #skills {
@@ -113,10 +122,10 @@ main {
   li {
     display: inline;
     &:after {
-      content: '•';
+      content: "•";
     }
     &:last-child:after {
-      content: '';
+      content: "";
     }
   }
 }
@@ -156,11 +165,14 @@ main {
 
 #col-1 {
   font-size: 12pt;
-  // display: grid;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-row-gap: 12pt;
 }
 
 #education {
-  .school {
+  .school,
+  .coursework {
     margin-bottom: 12pt;
   }
 
@@ -173,8 +185,16 @@ main {
     color: #535353;
     font-style: italic;
   }
+
+  .extracurricular {
+    margin-bottom: 4pt;
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 #last-updated {
   color: #a7a7a7;
+  align-self: end;
 }

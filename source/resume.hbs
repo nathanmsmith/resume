@@ -67,16 +67,33 @@
               <div class="gpa">GPA: {{education.gpa}}</div>
             </div>
 
+            <div class="coursework">
+              <h3>
+                Relevant Coursework
+              </h3>
+              <ul>
+                {{#each education.coursework}}
+                  <li>
+                    {{{formatCourse this}}}
+                  </li>
+                {{/each}}
+              </ul>
+            </div>
+
             <h3>
-              Relevant Coursework
+              Extracurriculars
             </h3>
-            <ul>
-              {{#each education.coursework}}
-                <li>
-                  {{{formatCourse this}}}
-                </li>
-              {{/each}}
-            </ul>
+            <div>
+                {{#each education.extracurriculars}}
+                  <div class="extracurricular">
+                    <h4>{{this.organization}}</h4>
+                    <div>
+                      {{arrayToText this.roles}}
+                    </div>
+                  </div>
+                {{/each}}
+            </div>
+
           </section>
           <section id='skills'>
             <h2>
