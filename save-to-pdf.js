@@ -3,27 +3,23 @@ const puppeteer = require('puppeteer')
 async function generatePDF(url) {
   const browser = await puppeteer.launch({ headless: true }) // Puppeteer can only generate pdf in headless mode.
   const page = await browser.newPage()
-  await page.goto(url)
+  await page.goto(url, { waitUntil: 'networkidle2' })
   const pdfConfig = {
     path: 'resume.pdf', // Saves pdf to disk.
     format: 'letter',
-    // margin: {
-    //   // Word's default A4 margins
-    //   top: '2.54cm',
-    //   bottom: '2.54cm',
-    //   left: '2.54cm',
-    //   right: '2.54cm',
-    // },
+    margin: {
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+    },
   }
   await page.emulateMedia('screen')
-  const pdf = await page.pdf(pdfConfig) // Return the pdf buffer. Useful for saving the file not to disk.
-
+  await page.pdf(pdfConfig)
   await browser.close()
-
-  return pdf
 }
 
 ;(async () => {
-  const url = 'http://localhost:8080/resume'
-  const buffer = await generatePDF(url)
+  const url = `file://${__dirname}/build/index.html`
+  await generatePDF(url)
 })()

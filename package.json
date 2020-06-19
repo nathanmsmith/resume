@@ -4,8 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "eleventy --input=source --output=build/",
-    "start": "eleventy --input=source --output=build/ --serve"
+    "start": "eleventy --input=source --output=build/ --serve",
+    "build-html": "eleventy --input=source --output=build/",
+    "clean": "rm -rf build/",
+    "build-pdf": "yarn build-html && node save-to-pdf.js && open resume.pdf"
   },
   "dependencies": {
     "@11ty/eleventy": "0.11.0",

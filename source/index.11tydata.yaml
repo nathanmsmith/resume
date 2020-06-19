@@ -12,8 +12,6 @@ education:
   major_type: B.S.
   minor: Digital Humanities
   gpa: 3.52
-  honors:
-    - Member, Upsilon Pi Epsilon Honor Society
   coursework:
     - Algorithms
     - Operating Systems
@@ -32,15 +30,17 @@ education:
       TA: true
   extracurriculars:
     - organization: UCLA Radio
+      url: https://uclaradio.com
       roles: [Website and App Manager, DJ]
       start_date: 2016
       end_date: 2018
     - organization: Daily Bruin
+      url: https://dailybruin.com
       roles: [Director of Online Development, Reporter, Photographer]
       start_date: 2016
       end_date: 2019
-    - organization: Upsilon Pi Epsilon Honor Society
-      roles: [Member]
+    # - organization: Upsilon Pi Epsilon Honor Society
+    #   roles: [Member]
 
 skills:
   languages:

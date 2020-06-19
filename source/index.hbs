@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/resume.css">
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <div class="container">
@@ -87,7 +87,7 @@
                 {{#each education.extracurriculars}}
                   <div class="extracurricular">
                     <div class="extracurricular-header">
-                      <h4>{{this.organization}}</h4>
+                      <h4><a href="{{this.url}}">{{this.organization}}</a></h4>
                       {{#if this.start_date}}
                         <span class="extracurricular-dates">({{this.start_date}} &ndash; {{this.end_date}})</span>
                       {{/if}}

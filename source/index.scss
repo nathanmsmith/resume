@@ -4,7 +4,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   margin: 20px;
 
-  width: 7.84in;
+  width: 8in;
   margin: auto;
   font-size: 11pt;
   // line-height: 1.2;
@@ -13,7 +13,7 @@ body {
 
 .container {
   padding: 0.2in 0;
-  height: 10in;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -110,7 +110,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 2.36in 5.6in;
+  grid-template-columns: 0.3fr 0.7fr;
   column-gap: 10px;
   flex: 1;
 }
