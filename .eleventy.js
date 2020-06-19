@@ -19,6 +19,9 @@ module.exports = (eleventyConfig) => {
     if (course.TA) {
       output += '<div class="course-info">(Undergraduate TA)</div>'
     }
+    if (course.graduate) {
+      output += '<div class="course-info">(Graduate Level Course)</div>'
+    }
     return output
   })
 

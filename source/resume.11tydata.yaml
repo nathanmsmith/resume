@@ -23,19 +23,22 @@ education:
     - Compilers
     - Machine Learning
     - Artificial Intelligence
-    - Experience Design
+    - Website Experience Design
     - Human-Computer Interaction
-    - Quantum Computing
     - Database Systems
+    - title: Quantum Computing
+      graduate: true
     - title: Software Development Tools
       TA: true
   extracurriculars:
     - organization: UCLA Radio
       roles: [Website and App Manager, DJ]
-      start_date: 2017
+      start_date: 2016
       end_date: 2018
     - organization: Daily Bruin
       roles: [Director of Online Development, Reporter, Photographer]
+      start_date: 2016
+      end_date: 2019
     - organization: Upsilon Pi Epsilon Honor Society
       roles: [Member]
 
@@ -53,6 +56,11 @@ skills:
     - LaTeX
 
   frameworks_and_technologies:
+    - Node.js
+    - Express.js
+    - React
+    - Redux
+    - Electron
     - React Native
     - GraphQL
     - Flow

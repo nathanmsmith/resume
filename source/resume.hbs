@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8' />
     <title>
-      {{name}} - Resume
+      {{header.name}} &ndash; Resume
     </title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
@@ -86,7 +86,12 @@
             <div>
                 {{#each education.extracurriculars}}
                   <div class="extracurricular">
-                    <h4>{{this.organization}}</h4>
+                    <div class="extracurricular-header">
+                      <h4>{{this.organization}}</h4>
+                      {{#if this.start_date}}
+                        <span class="extracurricular-dates">({{this.start_date}} &ndash; {{this.end_date}})</span>
+                      {{/if}}
+                    </div>
                     <div>
                       {{arrayToText this.roles}}
                     </div>
@@ -152,9 +157,14 @@
           </section>
 
           <section id='projects'>
-            <h2>
-              Selected Projects
-            </h2>
+            <div class="projects-header">
+              <h2>
+                Selected Projects
+              </h2>
+              <span class="more-projects-note">
+                for more projects, please visit <a href="https://nathansmith.io">https://nathansmith.io</a>.
+              </span>
+            </div>
             {{#each projects}}
               <div class="project">
                 <div class="project-header">

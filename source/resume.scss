@@ -1,5 +1,7 @@
+$secondary-gray: #535353;
+
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   margin: 20px;
 
   width: 7.84in;
@@ -24,7 +26,7 @@ a {
 ul {
   margin: 0;
   padding-left: 11px;
-  list-style-type: "• ";
+  list-style-type: '• ';
 }
 
 // li {
@@ -88,10 +90,10 @@ header {
         font-style: italic;
       }
       &:after {
-        content: "│";
+        content: '│';
       }
       &:last-child:after {
-        content: "";
+        content: '';
       }
     }
   }
@@ -122,10 +124,10 @@ main {
   li {
     display: inline;
     &:after {
-      content: "•";
+      content: '•';
     }
     &:last-child:after {
-      content: "";
+      content: '';
     }
   }
 }
@@ -144,11 +146,22 @@ main {
   }
 
   .job-dates {
+    color: $secondary-gray;
     font-style: italic;
   }
 }
 
 #projects {
+  .projects-header > h2 {
+    display: inline;
+  }
+
+  .more-projects-note {
+    font-style: italic;
+    font-size: 11pt;
+    color: $secondary-gray;
+  }
+
   h3 {
     display: inline;
 
@@ -160,6 +173,7 @@ main {
 
   .project-tech {
     font-size: 12pt;
+    color: $secondary-gray;
   }
 }
 
@@ -182,7 +196,7 @@ main {
 
   .course-info {
     font-size: 10pt;
-    color: #535353;
+    color: $secondary-gray;
     font-style: italic;
   }
 
@@ -190,6 +204,17 @@ main {
     margin-bottom: 4pt;
     &:last-child {
       margin: 0;
+    }
+  }
+
+  .extracurricular-header {
+    h4 {
+      display: inline;
+    }
+    .extracurricular-dates {
+      font-size: 10pt;
+      font-style: italic;
+      color: $secondary-gray;
     }
   }
 }
