@@ -14,7 +14,7 @@ async function generatePDF(url) {
       right: 0,
     },
   }
-  await page.emulateMedia('screen')
+  await page.emulateMediaType('print')
   await page.pdf(pdfConfig)
   await browser.close()
 }
