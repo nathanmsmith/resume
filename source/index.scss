@@ -1,7 +1,7 @@
 $secondary-gray: #535353;
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   margin: 20px;
 
   width: 8in;
@@ -26,7 +26,7 @@ a {
 ul {
   margin: 0;
   padding-left: 11px;
-  list-style-type: '• ';
+  list-style-type: "• ";
 }
 
 // li {
@@ -90,10 +90,10 @@ header {
         font-style: italic;
       }
       &:after {
-        content: '│';
+        content: "│";
       }
       &:last-child:after {
-        content: '';
+        content: "";
       }
     }
   }
@@ -104,7 +104,7 @@ header {
     background: transparent;
     width: 100%;
     border: none;
-    border-top: solid 1px #aaa;
+    border-top: solid 1px black;
   }
 }
 
@@ -124,10 +124,10 @@ main {
   li {
     display: inline;
     &:after {
-      content: '•';
+      content: "•";
     }
     &:last-child:after {
-      content: '';
+      content: "";
     }
   }
 }
