@@ -1,27 +1,30 @@
 $secondary-gray: #535353;
 
+// Margins
+$subsection-bottom-margin: 10pt;
+$section-bottom-margin: 12pt;
+
 @media print {
   @page {
     size: letter;
-    margin: 0.2in 0.3in 0.2in;
+    margin: 0.2in 0.3in 0.1in;
   }
 }
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  // margin: 20px;
-
   font-size: 11pt;
   line-height: 1.2;
   letter-spacing: 0.25px;
 }
 
 .container {
-  // width: 8.5in;
-  // padding: 0.2in 0.35in;
-  // height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @media screen {
+    padding: 0.2in 0.35in;
+  }
 }
 
 a {
@@ -83,15 +86,12 @@ header {
     padding: 0;
 
     flex-direction: row;
-    // width: 100%;
-    // justify-content: space-between;
 
     margin: 0 auto;
     text-align: center;
 
     li {
       display: inline;
-      // margin: 0 6px;
       a {
         font-style: italic;
       }
@@ -125,7 +125,10 @@ main {
   ul {
     padding: 0;
     margin: 0;
-    margin-bottom: 12pt;
+    margin-bottom: $subsection-bottom-margin;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   li {
     display: inline;
@@ -193,7 +196,7 @@ main {
 #education {
   .school,
   .coursework {
-    margin-bottom: 12pt;
+    margin-bottom: $subsection-bottom-margin;
   }
 
   .graduation-date {
