@@ -1,19 +1,25 @@
 $secondary-gray: #535353;
 
+@media print {
+  @page {
+    size: letter;
+    margin: 0.2in 0.3in 0.2in;
+  }
+}
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  margin: 20px;
+  // margin: 20px;
 
-  width: 8in;
-  margin: auto;
   font-size: 11pt;
-  // line-height: 1.2;
+  line-height: 1.2;
   letter-spacing: 0.25px;
 }
 
 .container {
-  padding: 0.2in 0;
-  height: 100vh;
+  // width: 8.5in;
+  // padding: 0.2in 0.35in;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
 }
