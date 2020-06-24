@@ -11,7 +11,7 @@ education:
   major: Computer Science
   major_type: B.S.
   minor: Digital Humanities
-  gpa: 3.52
+  gpa: 3.61
   coursework:
     - Algorithms
     - Operating Systems
@@ -36,7 +36,7 @@ education:
       end_date: 2018
     - organization: Daily Bruin
       url: https://dailybruin.com
-      roles: [Director of Online Development, Reporter, Photographer]
+      roles: [Online Development Director, Reporter, Photographer]
       start_date: 2016
       end_date: 2019
     # - organization: Upsilon Pi Epsilon Honor Society
@@ -62,19 +62,19 @@ skills:
     - React
     - Redux
     - Electron
-    - React Native
     - GraphQL
+    - React Native
     - Flow
-    - Bootstrap/Foundation
     - Tailwind
-    - CSS-in-JS
+    - Bootstrap/Foundation
     - jQuery
+    - CSS-in-JS
     - Flask
     - Django
     - MongoDB
     - Docker
-    - Unix/Linux
     - Git
+    - Unix/Linux
     - Shell
 
 experience:
@@ -143,7 +143,7 @@ projects:
     technologies: [TypeScript, React, GraphQL, Express.js, PostgreSQL]
     description: Sole developer of secure and real-time database application designed to quickly search manage 800+ news contacts for school newspaper. Site backend is an Express.js server that handles OAuth login and CRUD functionality. React frontend communicates with server via GraphQL.
 
-  - name: uclaradio.com
-    url: https://github.com/uclaradio/
-    technologies: [React, Redux, Express, MongoDB]
-    description: Project manager and developer of dynamic web page that streams music live, enables listener interaction with DJs, and manages members of UCLA Radio internally. Receives ~5,000 views/month.
+  # - name: uclaradio.com
+  #   url: https://github.com/uclaradio/
+  #   technologies: [React, Redux, Express, MongoDB]
+  #   description: Project manager and developer of dynamic web page that streams music live, enables listener interaction with DJs, and manages members of UCLA Radio internally. Receives ~5,000 views/month.
