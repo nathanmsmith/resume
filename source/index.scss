@@ -11,6 +11,10 @@ $section-bottom-margin: 12pt;
   }
 }
 
+html {
+  -webkit-print-color-adjust: exact;
+}
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 11pt;
