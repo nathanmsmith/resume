@@ -27,7 +27,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPairedHandlebarsShortcode('currentDate', () => {
     const today = new Date();
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
     return today.toLocaleString('en-US', options);
   });
 

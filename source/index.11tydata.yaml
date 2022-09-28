@@ -26,7 +26,7 @@ education:
     - Human-Computer Interaction
     - Database Systems
     - title: Quantum Computing
-      graduate: true
+      # graduate: true
     - title: Software Development Tools
       TA: true
   extracurriculars:
@@ -40,8 +40,8 @@ education:
       roles: [Online Development Director, Reporter, Photographer]
       start_date: 2016
       end_date: 2019
-    - organization: Upsilon Pi Epsilon Honor Society
-      roles: [Member]
+    # - organization: Upsilon Pi Epsilon Honor Society
+    #   roles: [Member]
 
 skills:
   languages:
@@ -69,9 +69,9 @@ skills:
     - Tailwind
     - Rails
     - d3.js
-    - Bootstrap/Foundation
-    - jQuery
-    - CSS-in-JS
+    # - Bootstrap/Foundation
+    # - jQuery
+    # - CSS-in-JS
     - MongoDB
     - Docker
     - Git
@@ -83,6 +83,7 @@ experience:
     url: https://stripe.com
     title: Product Engineer
     start_date: June 2021
+    end_date: Present
     bullets:
       - Eliminated 100+ monthly support tickets by scoping and developing subscription management functionality into Stripe Atlas dashboard.
       - DRI for team OKR to reduce percentage of Atlas founders with support intervention. Shrank number from 10% to 3%.
@@ -113,8 +114,8 @@ experience:
     end_date: September 2019
     bullets:
       - Implemented and extended RPCs enhancing path payments over the Stellar cryptocurrency network in Go.
-      - Spearheaded development of a Keybase TypeScript bot library for use by third-party developers.
-      - Proposed and implemented a program to compile types defined in Avro serialization language into Python, Go, and TypeScript for use by Keybase bot libraries.
+      - Spearheaded development of a Keybase TypeScript library for use by third-party developers.
+      - Proposed and implemented a program to compile types defined in Avro serialization language into Python, Go, and TypeScript for use by Keybase libraries.
 
   - company: Datadog
     url: https://www.datadoghq.com
@@ -122,8 +123,8 @@ experience:
     start_date: January 2019
     end_date: May 2019
     bullets:
-      - Individually completed a team OKR by overhauling frontend number formatting by ensuring output is human-readable and increasing test coverage from ~15% to 100%.
-      - Restructured Datadog’s frontend storage of supported units, removing thousands of lines of code, improving frontend type safety, and reducing the size of subsequent page loads by 2.6kB through caching.
+      - Overhauled frontend number formatting to ensure output was human-readable across screens and locales.
+      - Restructured Datadog’s frontend storage of supported units. Removed thousands of lines of code, improved frontend type safety, and reduced the size of subsequent page loads by 2.6kB through caching.
       # - Planned and led discussion of 8 engineers on working with side effects in Redux.
 
   - company: Keybase
@@ -141,14 +142,14 @@ experience:
     start_date: June 2017
     end_date: September 2017
     bullets:
-      - Audited information architecture of internal sites focusing on usability, designed clearer mockups and prototypes, and presented findings to Autodesk’s VP of Design.
+      - Audited information architecture of internal sites, designed clearer mockups and prototypes, and presented findings to Autodesk’s VP of Design.
       - Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
 
 projects:
   - name: Hotseat
     url: https://hotseat.io
     technologies: [Ruby on Rails, Go, React, d3.js, PostgreSQL, 'AWS Lambda']
-    description: Lead developer and maintainer of UCLA course enrollment site with over 1,200 users. Hotseat scrapes hourly enrollment data from registrar via highly concurrent Go Lambda functions and sends automated text alerts to subscribers. Site is built on Ruby on Rails and utilizes React and d3.js on the frontend.
+    description: Lead developer/maintainer. Hotseat scrapes hourly enrollment data from the UCLA Registrar via concurrent Lambda functions and sends automated text alerts to subscribers. Over 1,200 users.
 
   # - name: Exploring Enrollment
   #   url: https://nathansmith.io/exploring-enrollment
