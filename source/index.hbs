@@ -64,7 +64,9 @@
               <div class="minor">
                 Minor, {{education.minor}}
               </div>
-              <div class="gpa">GPA: {{education.gpa}}</div>
+              {{#if education.gpa}}
+                <div class="gpa">GPA: {{education.gpa}}</div>
+              {{/if}}
             </div>
 
             <div class="coursework">

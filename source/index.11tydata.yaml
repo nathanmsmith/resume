@@ -12,7 +12,7 @@ education:
   major_type: B.S.
   major: Computer Science
   minor: Digital Humanities
-  gpa: 3.61
+  # gpa: 3.61
   coursework:
     - Algorithms
     - Operating Systems
@@ -53,7 +53,7 @@ skills:
     - Java
     - Go
     - C
-    - Common Lisp
+    - Lua
     - SQL
     - LaTeX
 
@@ -87,6 +87,7 @@ experience:
     bullets:
       - Eliminated 100+ monthly support tickets by scoping and developing subscription management functionality into Stripe Atlas dashboard.
       - DRI for team OKR to reduce percentage of Atlas founders with support intervention. Shrank number from 10% to 3%.
+      - Mentored new grads and interns across Stripe. Actively involved in University Recruiting efforts.
 
   - company: Facebook
     url: https://facebook.com
@@ -114,7 +115,7 @@ experience:
     end_date: September 2019
     bullets:
       - Implemented and extended RPCs enhancing path payments over the Stellar cryptocurrency network in Go.
-      - Spearheaded development of a Keybase TypeScript library for use by third-party developers.
+      - Spearheaded development of a Keybase TypeScript library for 3rd-party developers.
       - Proposed and implemented a program to compile types defined in Avro serialization language into Python, Go, and TypeScript for use by Keybase libraries.
 
   - company: Datadog
