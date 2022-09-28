@@ -1,15 +1,16 @@
 header:
   name: Nathan Smith
   website: https://nathansmith.io
-  email: nathan.smith@ucla.edu
-  github: nathunsmitty
+  email: nathan@nathansmith.io
+  github: nathanmsmith
   linkedin: nathanmatthewsmith
 
 education:
   school: University of California, Los Angeles
-  graduation: 'Graduation date: June 2021'
-  major: Computer Science
+  start_date: September 2016
+  end_date: June 2021
   major_type: B.S.
+  major: Computer Science
   minor: Digital Humanities
   gpa: 3.61
   coursework:
@@ -39,8 +40,8 @@ education:
       roles: [Online Development Director, Reporter, Photographer]
       start_date: 2016
       end_date: 2019
-    # - organization: Upsilon Pi Epsilon Honor Society
-    #   roles: [Member]
+    - organization: Upsilon Pi Epsilon Honor Society
+      roles: [Member]
 
 skills:
   languages:
@@ -66,11 +67,11 @@ skills:
     - React Native
     - Flow
     - Tailwind
+    - Rails
+    - d3.js
     - Bootstrap/Foundation
     - jQuery
     - CSS-in-JS
-    - Flask
-    - Django
     - MongoDB
     - Docker
     - Git
@@ -78,13 +79,22 @@ skills:
     - Shell
 
 experience:
+  - company: Stripe
+    url: https://stripe.com
+    title: Product Engineer
+    start_date: June 2021
+    bullets:
+      - Eliminated 100+ monthly support tickets by scoping and developing subscription management functionality into Stripe Atlas dashboard.
+      - DRI for team OKR to reduce percentage of Atlas founders with support intervention. Shrank number from 10% to 3%.
+
   - company: Facebook
     url: https://facebook.com
     title: Production Engineering Intern
     start_date: September 2020
     end_date: December 2020
     bullets:
-      - Incoming fall intern on Ads team.
+      - Utilized d3.js and React to build internal site visualizing data flow of advertising machine learning models.
+      - Optimized SQL queries to reduce page load by 100%.
 
   - company: Stripe
     url: https://stripe.com
@@ -92,7 +102,9 @@ experience:
     start_date: June 2020
     end_date: September 2020
     bullets:
-      - Summer intern on Terminal Foundation team.
+      - Created multiple internal tools wielding Java and Ruby to imporve administrative tooling around Stripe Terminal readers. Documented use cases in team runbooks.
+      - Developed, demoed, and won 2nd place in internal intern hackathon. Hackathon project was presented to the entire company by CEO.
+      # - Extented internal editor plugins to improve developer Java efficiency.
 
   - company: Keybase
     url: https://keybase.io
@@ -112,7 +124,7 @@ experience:
     bullets:
       - Individually completed a team OKR by overhauling frontend number formatting by ensuring output is human-readable and increasing test coverage from ~15% to 100%.
       - Restructured Datadog’s frontend storage of supported units, removing thousands of lines of code, improving frontend type safety, and reducing the size of subsequent page loads by 2.6kB through caching.
-      - Planned and led discussion of 8 engineers on working with side effects in Redux.
+      # - Planned and led discussion of 8 engineers on working with side effects in Redux.
 
   - company: Keybase
     url: https://keybase.io
@@ -133,15 +145,20 @@ experience:
       - Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
 
 projects:
-  - name: Exploring Enrollment
-    url: https://nathansmith.io/exploring-enrollment
-    technologies: [Go, React, PostgreSQL, 'AWS Lambda']
-    description: Sole developer of highly concurrent Go web scraper that ran hourly as a Lambda function to collect real-time enrollment data from UCLA Registrar. Wrote two-part blog post on development process in addition to a four-part report on findings.
+  - name: Hotseat
+    url: https://hotseat.io
+    technologies: [Ruby on Rails, Go, React, d3.js, PostgreSQL, 'AWS Lambda']
+    description: Lead developer and maintainer of UCLA course enrollment site with over 1,200 users. Hotseat scrapes hourly enrollment data from registrar via highly concurrent Go Lambda functions and sends automated text alerts to subscribers. Site is built on Ruby on Rails and utilizes React and d3.js on the frontend.
 
-  - name: Sources
-    url: https://github.com/dailybruin/sources
-    technologies: [TypeScript, React, GraphQL, Express.js, PostgreSQL]
-    description: Sole developer of secure and real-time database application designed to quickly search manage 800+ news contacts for school newspaper. Site backend is an Express.js server that handles OAuth login and CRUD functionality. React frontend communicates with server via GraphQL.
+  # - name: Exploring Enrollment
+  #   url: https://nathansmith.io/exploring-enrollment
+  #   technologies: [Go, React, PostgreSQL, 'AWS Lambda']
+  #   description: Sole developer of highly concurrent Go web scraper that ran hourly as a Lambda function to collect real-time enrollment data from UCLA Registrar. Wrote two-part blog post on development process in addition to a four-part report on findings.
+
+  # - name: Sources
+  #   url: https://github.com/dailybruin/sources
+  #   technologies: [TypeScript, React, GraphQL, Express.js, PostgreSQL]
+  #   description: Sole developer of secure and real-time database application designed to quickly search manage 800+ news contacts for school newspaper. Site backend is an Express.js server that handles OAuth login and CRUD functionality. React frontend communicates with server via GraphQL.
 
   # - name: uclaradio.com
   #   url: https://github.com/uclaradio/
