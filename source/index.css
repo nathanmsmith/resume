@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0.2in 0.3in 0.1in;
+  }
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 11pt;
+  line-height: 1.2;
+  letter-spacing: 0.25px;
+}
+
+@media screen {
+  .container {
+    padding: 0.2in 0.35in;
+  }
+}
+
+header {
+  ul {
+    list-style: none;
+    font-family: Georgia;
+    font-size: 10pt;
+
+    padding: 0;
+
+    flex-direction: row;
+
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+      display: inline;
+      a {
+        font-style: italic;
+      }
+      &:after {
+        content: '│';
+      }
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+}

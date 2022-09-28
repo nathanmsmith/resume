@@ -5,18 +5,22 @@
   "license": "MIT",
   "scripts": {
     "start": "eleventy --input=source --output=build/ --serve",
-    "build-html": "eleventy --input=source --output=build/",
-    "clean": "rm -rf build/",
-    "build-pdf": "yarn build-html && node save-to-pdf.js && open resume.pdf"
+    "build:html": "eleventy --input=source --output=build/",
+    "build": "yarn build:html && node save-to-pdf.js && open resume.pdf",
+    "clean": "rm -rf build/"
   },
   "dependencies": {
-    "@11ty/eleventy": "0.11.0",
-    "eleventy-plugin-sass": "1.0.0",
-    "js-yaml": "3.14.0",
-    "katex": "0.11.1",
-    "puppeteer": "3.3.0"
+    "@11ty/eleventy": "1.0.2",
+    "autoprefixer": "10.4.12",
+    "concurrently": "^7.4.0",
+    "eleventy-plugin-postcss": "1.0.4",
+    "js-yaml": "4.1.0",
+    "katex": "0.16.2",
+    "postcss": "8.4.16",
+    "puppeteer": "18.0.5",
+    "tailwindcss": "3.1.8"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.7.1"
   }
 }
