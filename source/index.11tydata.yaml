@@ -4,6 +4,7 @@ header:
   email: nathan@nathansmith.io
   github: nathanmsmith
   linkedin: nathanmatthewsmith
+  twitter: nthnmsmth
 
 education:
   school: University of California, Los Angeles
@@ -85,8 +86,8 @@ experience:
     start_date: June 2021
     end_date: Present
     bullets:
-      - Eliminated 100+ monthly support tickets by scoping and developing subscription management functionality into Stripe Atlas dashboard.
-      - DRI for team OKR to reduce percentage of Atlas founders with support intervention. Shrank number from 10% to 3%.
+      - "Interviewed startup founders to understand pain points. Identified and implemented major feature launches: [live company name search](https://twitter.com/jeff_weinstein/status/1571944324803461121), [dynamic equity visualization](https://twitter.com/jeff_weinstein/status/1571944332936220672), [prefilled bank application](https://twitter.com/jeff_weinstein/status/1612612133610749953)."
+      - Queried and analyzed top support reasons. Eliminated 14% ($250k+) of Atlas support volume by automating error states and preventing invalid input.
       - Mentored new grads and interns across Stripe. Actively involved in university recruiting efforts.
 
   - company: Facebook
@@ -95,7 +96,7 @@ experience:
     start_date: September 2020
     end_date: December 2020
     bullets:
-      - Utilized d3.js and React to build internal site visualizing data flow of advertising machine learning models.
+      - Utilized d3 and React to build internal site visualizing data flow of advertising machine learning models.
       - Optimized SQL queries to reduce page load by 100%.
 
   - company: Stripe
@@ -149,7 +150,7 @@ experience:
 projects:
   - name: Hotseat
     url: https://hotseat.io
-    technologies: [Ruby on Rails, Go, React, d3.js, PostgreSQL, 'AWS Lambda']
+    technologies: [Ruby on Rails, Go, React, d3.js, PostgreSQL, "AWS Lambda"]
     description: Lead developer/maintainer. Hotseat scrapes hourly enrollment data from the UCLA Registrar via concurrent Lambda functions and sends automated text alerts to subscribers. Over 1,200 users.
 
   # - name: Exploring Enrollment

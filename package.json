@@ -16,6 +16,7 @@
     "eleventy-plugin-postcss": "1.0.4",
     "js-yaml": "4.1.0",
     "katex": "0.16.2",
+    "markdown-it": "13.0.1",
     "postcss": "8.4.16",
     "puppeteer": "18.0.5",
     "tailwindcss": "3.1.8"

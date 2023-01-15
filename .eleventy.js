@@ -1,9 +1,16 @@
 const yaml = require('js-yaml');
 const katex = require('katex');
 const PostCSSPlugin = require('eleventy-plugin-postcss');
+const MarkdownIt = require("markdown-it");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(PostCSSPlugin);
+
+  const mdRender = new MarkdownIt();
+  eleventyConfig.addFilter("md", (rawString) => {
+    const renderedMd = mdRender.render(rawString);
+    return renderedMd.replace("<p>", "").replace("</p>", "");
+  });
 
   eleventyConfig.addFilter('katex', (value) => {
     if (value.toLowerCase() === 'latex') {
