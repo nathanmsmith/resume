@@ -1,15 +1,30 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8' />
+    <meta charset="utf-8" />
     <title>
-      {{header.name}} &ndash; Resume
+      {{header.name}}
+      &ndash; Resume
     </title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css"
+      integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div class="container">
@@ -43,33 +58,11 @@
             </a>
           </li>
         </ul>
-        <hr>
+        <hr />
       </header>
       <main>
-        <!-- <section id='col-1'> -->
-
-        <!--     <div class="coursework"> -->
-        <!--       <h3> -->
-        <!--         Relevant Coursework -->
-        <!--       </h3> -->
-        <!--       <ul> -->
-        <!--         {{#each education.coursework}} -->
-        <!--           <li> -->
-        <!--             {{{formatCourse this}}} -->
-        <!--           </li> -->
-        <!--         {{/each}} -->
-        <!--       </ul> -->
-        <!--     </div> -->
-
-
-        <!--   </section> -->
-
-        <!--   <div id="last-updated"> -->
-        <!--     Last updated {{currentDate}} -->
-        <!--   </div> -->
-        <!-- </section> -->
-        <section id='col-2'>
-          <section id='experience'>
+        <section>
+          <section id="experience">
             <h2>
               Experience
             </h2>
@@ -77,11 +70,13 @@
               <div class="job">
                 <div class="job-header">
                   <h3><a href="{{this.url}}">{{this.company}}</a></h3>:
-                  <span class='job-title'>
+                  <span class="job-title">
                     {{this.title}}
                   </span>
-                  <span class='job-dates'>
-                    ({{this.start_date}} &ndash; {{this.end_date}})
+                  <span class="job-dates">
+                    ({{this.start_date}}
+                    &ndash;
+                    {{this.end_date}})
                   </span>
                 </div>
                 {{#if this.bullets.length}}
@@ -97,7 +92,7 @@
             {{/each}}
           </section>
 
-          <section id='education'>
+          <section id="education">
             <h2>
               Education
             </h2>
@@ -106,7 +101,9 @@
                 {{education.school}}
               </h3>
               <div class="major">
-                {{education.major_type}} {{education.major}}, with a minor in {{education.minor}}
+                {{education.major_type}}
+                {{education.major}}, with a minor in
+                {{education.minor}}
               </div>
             </div>
 
@@ -130,31 +127,34 @@
             <!-- </div> -->
           </section>
 
-          <section id='projects'>
+          <section id="projects">
             <div class="projects-header">
               <h2>
                 Selected Projects
               </h2>
               <span class="more-projects-note">
-                for more, please visit <a href="https://nathansmith.io/portfolio">https://nathansmith.io/porfolio</a>.
+                for more, please visit
+                <a
+                  href="https://nathansmith.io/portfolio"
+                >https://nathansmith.io/porfolio</a>.
               </span>
             </div>
             {{#each projects}}
               <div class="project">
                 <div class="project-header">
                   <h3><a href="{{this.url}}">{{this.name}}</a></h3>
-                  <span class='project-tech'>
+                  <span class="project-tech">
                     ({{arrayToText this.technologies}})
                   </span>
                 </div>
                 <p>
-                {{this.description}}
+                  {{this.description}}
                 </p>
               </div>
             {{/each}}
           </section>
 
-          <section id='skills'>
+          <section id="skills">
             <h2>
               Skills
             </h2>
@@ -163,9 +163,9 @@
             </h3>
             <ul>
               {{#each skills.languages}}
-              <li>
-                {{{katex this}}}
-              </li>
+                <li>
+                  {{{katex this}}}
+                </li>
               {{/each}}
             </ul>
             <h3>
@@ -173,9 +173,9 @@
             </h3>
             <ul>
               {{#each skills.frameworks_and_technologies}}
-              <li>
-                {{this}}
-              </li>
+                <li>
+                  {{this}}
+                </li>
               {{/each}}
             </ul>
           </section>
