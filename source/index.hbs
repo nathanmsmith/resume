@@ -46,91 +46,28 @@
         <hr>
       </header>
       <main>
-        <section id='col-1'>
-          <section id='education'>
-            <h2>
-              Education
-            </h2>
-            <div class="school">
-              <h3>
-                {{education.school}}
-              </h3>
-              <div class="school-dates">
-                {{education.start_date}} &ndash; {{education.end_date}}
-              </div>
-              <div class="major">
-                {{education.major_type}} {{education.major}}
-              </div>
-              <div class="minor">
-                Minor, {{education.minor}}
-              </div>
-              {{#if education.gpa}}
-                <div class="gpa">GPA: {{education.gpa}}</div>
-              {{/if}}
-            </div>
+        <!-- <section id='col-1'> -->
 
-            <div class="coursework">
-              <h3>
-                Relevant Coursework
-              </h3>
-              <ul>
-                {{#each education.coursework}}
-                  <li>
-                    {{{formatCourse this}}}
-                  </li>
-                {{/each}}
-              </ul>
-            </div>
+        <!--     <div class="coursework"> -->
+        <!--       <h3> -->
+        <!--         Relevant Coursework -->
+        <!--       </h3> -->
+        <!--       <ul> -->
+        <!--         {{#each education.coursework}} -->
+        <!--           <li> -->
+        <!--             {{{formatCourse this}}} -->
+        <!--           </li> -->
+        <!--         {{/each}} -->
+        <!--       </ul> -->
+        <!--     </div> -->
 
-            <h3>
-              Extracurriculars
-            </h3>
-            <div>
-                {{#each education.extracurriculars}}
-                  <div class="extracurricular">
-                    <div class="extracurricular-header">
-                      <h4><a href="{{this.url}}">{{this.organization}}</a></h4>
-                      {{#if this.start_date}}
-                        <span class="extracurricular-dates">({{this.start_date}} &ndash; {{this.end_date}})</span>
-                      {{/if}}
-                    </div>
-                    <div>
-                      {{arrayToText this.roles}}
-                    </div>
-                  </div>
-                {{/each}}
-            </div>
 
-          </section>
-          <section id='skills'>
-            <h2>
-              Skills
-            </h2>
-            <h3>
-              Languages
-            </h3>
-            <ul>
-              {{#each skills.languages}}
-                <li>
-                  {{{katex this}}}
-                </li>
-              {{/each}}
-            </ul>
-            <h3>
-              Frameworks & Technologies
-            </h3>
-            <ul>
-              {{#each skills.frameworks_and_technologies}}
-                <li>
-                  {{this}}
-                </li>
-              {{/each}}
-            </ul>
-          </section>
-          <div id="last-updated">
-            Last updated {{currentDate}}
-          </div>
-        </section>
+        <!--   </section> -->
+
+        <!--   <div id="last-updated"> -->
+        <!--     Last updated {{currentDate}} -->
+        <!--   </div> -->
+        <!-- </section> -->
         <section id='col-2'>
           <section id='experience'>
             <h2>
@@ -147,15 +84,50 @@
                     ({{this.start_date}} &ndash; {{this.end_date}})
                   </span>
                 </div>
-                <ul>
-                  {{#each this.bullets}}
-                    <li>
-                      {{{md this}}}
-                    </li>
-                  {{/each}}
-                </ul>
+                {{#if this.bullets.length}}
+                  <ul>
+                    {{#each this.bullets}}
+                      <li>
+                        {{{md this}}}
+                      </li>
+                    {{/each}}
+                  </ul>
+                {{/if}}
               </div>
             {{/each}}
+          </section>
+
+          <section id='education'>
+            <h2>
+              Education
+            </h2>
+            <div class="school">
+              <h3>
+                {{education.school}}
+              </h3>
+              <div class="major">
+                {{education.major_type}} {{education.major}}, with a minor in {{education.minor}}
+              </div>
+            </div>
+
+            <!-- <h3> -->
+            <!--   Extracurriculars -->
+            <!-- </h3> -->
+            <!-- <div id="extracurriculars"> -->
+            <!--     {{#each education.extracurriculars}} -->
+            <!--       <div class="extracurricular"> -->
+            <!--         <div class="extracurricular-header"> -->
+            <!--           <h4><a href="{{this.url}}">{{this.organization}}</a></h4> -->
+            <!--           {{#if this.start_date}} -->
+            <!--             <span class="extracurricular-dates">({{this.start_date}} &ndash; {{this.end_date}})</span> -->
+            <!--           {{/if}} -->
+            <!--         </div> -->
+            <!--         <div> -->
+            <!--           {{arrayToText this.roles}} -->
+            <!--         </div> -->
+            <!--       </div> -->
+            <!--     {{/each}} -->
+            <!-- </div> -->
           </section>
 
           <section id='projects'>
@@ -180,6 +152,32 @@
                 </p>
               </div>
             {{/each}}
+          </section>
+
+          <section id='skills'>
+            <h2>
+              Skills
+            </h2>
+            <h3>
+              Languages
+            </h3>
+            <ul>
+              {{#each skills.languages}}
+              <li>
+                {{{katex this}}}
+              </li>
+              {{/each}}
+            </ul>
+            <h3>
+              Frameworks & Technologies
+            </h3>
+            <ul>
+              {{#each skills.frameworks_and_technologies}}
+              <li>
+                {{this}}
+              </li>
+              {{/each}}
+            </ul>
           </section>
         </section>
       </main>

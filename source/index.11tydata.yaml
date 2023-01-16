@@ -82,7 +82,7 @@ skills:
 experience:
   - company: Stripe
     url: https://stripe.com
-    title: Product Engineer
+    title: Software Engineer
     start_date: June 2021
     end_date: Present
     bullets:
@@ -115,7 +115,7 @@ experience:
     start_date: June 2019
     end_date: September 2019
     bullets:
-      - Implemented and extended RPCs enhancing path payments over the Stellar cryptocurrency network in Go.
+      # - Implemented and extended RPCs enhancing path payments over the Stellar cryptocurrency network in Go.
       - Spearheaded development of a Keybase TypeScript library for 3rd-party developers.
       - Proposed and implemented a program to compile types defined in Avro serialization language into Python, Go, and TypeScript for use by Keybase libraries.
 
@@ -134,24 +134,24 @@ experience:
     title: Software Engineering Intern
     start_date: June 2018
     end_date: September 2018
-    bullets:
-      - Developed frontends enabling cryptocurrency payments and wallet account management from within the Keybase Electron/React Native app.
-      - Integrated server data into frontend client asynchronously through sagas to provide more accurate information on unread chat messages.
+    # bullets:
+    #   - Developed frontends enabling cryptocurrency payments and wallet account management from within the Keybase Electron/React Native app.
+    #   - Integrated server data into frontend client asynchronously through sagas to provide more accurate information on unread chat messages.
 
   - company: Autodesk
     url: https://www.autodesk.com
     title: Web Development Intern
     start_date: June 2017
     end_date: September 2017
-    bullets:
-      - Audited information architecture of internal sites, designed clearer mockups and prototypes, and presented findings to Autodesk’s VP of Design.
-      - Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
+    # bullets:
+    #   - Audited information architecture of internal sites, designed clearer mockups and prototypes, and presented findings to Autodesk’s VP of Design.
+    #   - Retooled build system of internal web framework using Babel and Webpack to decrease load time of sites used daily by more than 4,000 Autodesk engineers.
 
 projects:
   - name: Hotseat
     url: https://hotseat.io
     technologies: [Ruby on Rails, Go, React, d3.js, PostgreSQL, "AWS Lambda"]
-    description: Lead developer/maintainer. Hotseat scrapes hourly enrollment data from the UCLA Registrar via concurrent Lambda functions and sends automated text alerts to subscribers. Over 1,200 users.
+    description: Lead developer/maintainer. Hotseat scrapes hourly enrollment data from the UCLA Registrar via concurrent Lambda functions and sends automated text alerts to subscribers. 2,200+ users.
 
   # - name: Exploring Enrollment
   #   url: https://nathansmith.io/exploring-enrollment

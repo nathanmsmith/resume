@@ -12,7 +12,8 @@
 @media print {
   @page {
     size: letter;
-    margin: 0.2in 0.2in 0.1in;
+    /* margin: 0.2in 0.2in 0.1in; */
+    margin: 0.3in;
   }
 }
 
@@ -118,14 +119,16 @@ header {
   }
 }
 
-main {
-  display: grid;
-  grid-template-columns: 0.3fr 0.7fr;
-  column-gap: 10px;
-  flex: 1;
-}
+/* main { */
+/*   display: grid; */
+/*   grid-template-columns: 0.3fr 0.7fr; */
+/*   column-gap: 10px; */
+/*   flex: 1; */
+/* } */
 
 #skills {
+  margin-top: 12pt;
+
   ul {
     padding: 0;
     margin: 0;
@@ -154,7 +157,7 @@ main {
     display: inline;
   }
 
-  .job {
+  .job ul {
     margin-bottom: 12pt;
   }
 
@@ -169,6 +172,8 @@ main {
 }
 
 #projects {
+  margin-top: 12pt;
+
   .projects-header > h2 {
     display: inline;
   }
@@ -202,6 +207,8 @@ main {
 }
 
 #education {
+  margin-top: 12pt;
+
   .school,
   .coursework {
     margin-bottom: var(--subsection-bottom-margin);
@@ -216,6 +223,11 @@ main {
     font-size: 10pt;
     color: var(--secondary-gray);
     font-style: italic;
+  }
+
+  #extracurriculars {
+    display: flex;
+    gap: 8pt;
   }
 
   .extracurricular {
@@ -240,4 +252,5 @@ main {
 #last-updated {
   color: #a7a7a7;
   align-self: end;
+  margin-bottom: 10pt;
 }
